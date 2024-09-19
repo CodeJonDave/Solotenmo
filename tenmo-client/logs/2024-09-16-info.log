@@ -1,0 +1,95 @@
+2024-09-16T16:02:38.8499597 New user registered: test99
+2024-09-16T16:02:57.1946359 New user registered: test89
+2024-09-16T16:03:05.9624382 User test89 logged in successfully.
+2024-09-16T16:03:07.5658869 Retrieved user balance
+2024-09-16T16:03:13.036525 Retrieved users transfer history
+2024-09-16T16:03:16.3397508 Retrieved users transfer history
+2024-09-16T16:04:08.6585408 Retrieved users
+2024-09-16T16:04:17.8788598 Retrieved user balance
+2024-09-16T16:04:17.8858628 Transfer Id: 0
+Transfer Type: Send
+Transfer Status: Approved
+Account From: test89
+Account To: test99
+Amount: 100
+
+2024-09-16T16:04:22.2354818 Retrieved user balance
+2024-09-16T16:04:32.9254298 Retrieved users transfer history
+2024-09-16T16:04:32.9264314 Retrieved Full Transfers
+2024-09-16T16:05:23.1716463 Retrieved users
+2024-09-16T16:05:35.0181998 Retrieved users transfer history
+2024-09-16T16:11:33.6363074 New user registered: test100
+2024-09-16T16:11:50.8615245 User test100 logged in successfully.
+2024-09-16T16:11:55.6629131 Retrieved users
+2024-09-16T16:12:06.5775813 Transfer Id: 0
+Transfer Type: Request
+Transfer Status: Pending
+Account From: test99
+Account To: test100
+Amount: 100
+
+2024-09-16T16:12:11.3978445 Retrieved user balance
+2024-09-16T16:12:17.1259858 Retrieved users transfer history
+2024-09-16T16:12:17.1269857 Retrieved Full Transfers
+2024-09-16T16:12:25.8789039 Retrieved users transfer history
+2024-09-16T16:12:57.4819682 User test99 logged in successfully.
+2024-09-16T16:13:00.1213377 Retrieved users transfer history
+2024-09-16T16:13:00.1213377 Retrieved Full Transfers
+2024-09-16T16:13:12.6507694 Retrieved users transfer history
+2024-09-16T16:13:12.6507694 Retrieved Pending Transfers
+2024-09-16T16:13:22.9953914 Retrieved user balance
+2024-09-16T16:14:52.3761956 Retrieved users transfer history
+2024-09-16T16:14:52.3761956 Retrieved Full Transfers
+2024-09-16T16:14:59.6793942 Retrieved users transfer history
+2024-09-16T16:14:59.6793942 Retrieved Pending Transfers
+2024-09-16T16:15:08.958879 Retrieved user balance
+2024-09-16T16:15:08.9968789 Approved transfer: 3032
+2024-09-16T16:15:13.7954323 Retrieved user balance
+2024-09-16T16:15:32.7789728 User test99 logged in successfully.
+2024-09-16T16:15:36.4341056 Retrieved user balance
+2024-09-16T16:15:42.5137637 Retrieved user balance
+2024-09-16T16:15:54.9913982 Retrieved users transfer history
+2024-09-16T16:15:54.9924 Retrieved Full Transfers
+2024-09-16T16:21:21.5633804 New user registered: test101
+2024-09-16T16:21:32.3627602 New user registered: test202
+2024-09-16T16:21:42.2531836 User test101 logged in successfully.
+2024-09-16T16:21:44.6624017 Retrieved user balance
+2024-09-16T16:22:06.8960681 Retrieved users
+2024-09-16T16:23:24.8506147 Retrieved user balance
+2024-09-16T16:23:33.791842 Retrieved users
+2024-09-16T16:23:45.6040525 Retrieved users
+2024-09-16T16:24:01.9196986 Retrieved user balance
+2024-09-16T16:24:01.9286985 Transfer Id: 0
+Transfer Type: Send
+Transfer Status: Approved
+Account From: test101
+Account To: test202
+Amount: 100
+
+2024-09-16T16:24:06.1733897 Retrieved user balance
+2024-09-16T16:24:18.6041432 Retrieved users transfer history
+2024-09-16T16:24:18.6051429 Retrieved Full Transfers
+2024-09-16T16:24:24.7763502 Retrieved users transfer history
+2024-09-16T16:24:30.1673192 Retrieved users
+2024-09-16T16:24:35.9901798 Transfer Id: 0
+Transfer Type: Request
+Transfer Status: Pending
+Account From: test202
+Account To: test101
+Amount: 100
+
+2024-09-16T16:24:39.0251807 Retrieved users transfer history
+2024-09-16T16:24:39.0251807 Retrieved Full Transfers
+2024-09-16T16:25:00.7162724 Retrieved users transfer history
+2024-09-16T16:25:11.4696995 Retrieved user balance
+2024-09-16T16:25:33.5161471 User test202 logged in successfully.
+2024-09-16T16:25:35.4938268 Retrieved user balance
+2024-09-16T16:25:38.83557 Retrieved users transfer history
+2024-09-16T16:25:38.83557 Retrieved Full Transfers
+2024-09-16T16:25:47.6484471 Retrieved users transfer history
+2024-09-16T16:25:47.6484471 Retrieved Pending Transfers
+2024-09-16T16:26:03.4410525 Retrieved user balance
+2024-09-16T16:26:03.471612 Approved transfer: 3034
+2024-09-16T16:26:06.7902547 Retrieved user balance
+2024-09-16T16:26:24.4194055 User test101 logged in successfully.
+2024-09-16T16:26:26.2081807 Retrieved user balance

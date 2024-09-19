@@ -1,0 +1,213 @@
+2024-09-16T16:02:38.8249587 New Tenmo user registered: test99
+2024-09-16T16:02:57.1936367 New Tenmo user registered: test89
+2024-09-16T16:03:05.9379233 Tenmo user: test89 logged in.
+2024-09-16T16:03:07.5491019 Retrieved current user info: 
+User{id=1013, username='test89', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:03:07.5574059 Balance for user: 1013 retrieved successfully.
+2024-09-16T16:03:13.0181381 Retrieved current user info: 
+User{id=1013, username='test89', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:03:13.0211309 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? OR a_to.user_id = ? with parameter: 1013
+2024-09-16T16:03:13.0295062 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@45112d87
+2024-09-16T16:03:16.3347517 Retrieved current user info: 
+User{id=1013, username='test89', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:03:16.3347517 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? AND ts.transfer_status_desc = 'Pending' with parameter: 1013
+2024-09-16T16:03:16.3377616 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@632068af
+2024-09-16T16:04:08.6545439 User list retrieved
+2024-09-16T16:04:17.8768615 Retrieved current user info: 
+User{id=1013, username='test89', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:04:17.8778602 Balance for user: 1013 retrieved successfully.
+2024-09-16T16:04:17.9209962 Retrieved user info for user: test89
+2024-09-16T16:04:17.921996 Retrieved user info for user: test99
+2024-09-16T16:04:17.9229974 Retrieved status Id for description: Send
+2024-09-16T16:04:17.9229974 Retrieved status Id for description: Approved
+2024-09-16T16:04:17.9239969 Account Id: 2013 found for user: 1013
+2024-09-16T16:04:17.9239969 Account Id: 2012 found for user: 1012
+2024-09-16T16:04:17.9380339 Balance for userId: 1013 was decreased by: $100
+2024-09-16T16:04:17.9400317 Created and retrieved new transfer with id: 3031
+2024-09-16T16:04:22.2324789 Retrieved current user info: 
+User{id=1013, username='test89', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:04:22.2334773 Balance for user: 1013 retrieved successfully.
+2024-09-16T16:04:32.9194359 Retrieved current user info: 
+User{id=1013, username='test89', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:04:32.9194359 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? OR a_to.user_id = ? with parameter: 1013
+2024-09-16T16:04:32.92243 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@6912698a
+2024-09-16T16:04:32.9234307 com.techelevator.tenmo.model.TransferDto@4c8734b1
+2024-09-16T16:04:32.9234307 Retrieved all transfers for user: 1013
+2024-09-16T16:05:23.1656421 User list retrieved
+2024-09-16T16:05:35.0142001 Retrieved current user info: 
+User{id=1013, username='test89', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:05:35.0142001 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? AND ts.transfer_status_desc = 'Pending' with parameter: 1013
+2024-09-16T16:05:35.0161993 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@1460b07
+2024-09-16T16:11:33.6182919 New Tenmo user registered: test100
+2024-09-16T16:11:50.8379747 Tenmo user: test100 logged in.
+2024-09-16T16:11:55.6567337 User list retrieved
+2024-09-16T16:12:06.6161777 Retrieved user info for user: test99
+2024-09-16T16:12:06.6171725 Retrieved user info for user: test100
+2024-09-16T16:12:06.6181678 Retrieved status Id for description: Request
+2024-09-16T16:12:06.619168 Retrieved status Id for description: Pending
+2024-09-16T16:12:06.6221676 Account Id: 2012 found for user: 1012
+2024-09-16T16:12:06.6221676 Account Id: 2014 found for user: 1014
+2024-09-16T16:12:06.6251672 Created and retrieved new transfer with id: 3032
+2024-09-16T16:12:11.3908485 Retrieved current user info: 
+User{id=1014, username='test100', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:12:11.3918459 Balance for user: 1014 retrieved successfully.
+2024-09-16T16:12:17.1139853 Retrieved current user info: 
+User{id=1014, username='test100', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:12:17.1139853 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? OR a_to.user_id = ? with parameter: 1014
+2024-09-16T16:12:17.119985 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@232cdb18
+2024-09-16T16:12:17.119985 com.techelevator.tenmo.model.TransferDto@1b3f72b3
+2024-09-16T16:12:17.1209843 Retrieved all transfers for user: 1014
+2024-09-16T16:12:25.8749049 Retrieved current user info: 
+User{id=1014, username='test100', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:12:25.8749049 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? AND ts.transfer_status_desc = 'Pending' with parameter: 1014
+2024-09-16T16:12:25.8769034 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@4d6993a2
+2024-09-16T16:12:57.4609506 Tenmo user: test99 logged in.
+2024-09-16T16:13:00.1122665 Retrieved current user info: 
+User{id=1012, username='test99', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:13:00.1122665 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? OR a_to.user_id = ? with parameter: 1012
+2024-09-16T16:13:00.1143148 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@473ff3cb
+2024-09-16T16:13:00.1143148 com.techelevator.tenmo.model.TransferDto@1f518f46
+2024-09-16T16:13:00.1152776 com.techelevator.tenmo.model.TransferDto@4e9035b3
+2024-09-16T16:13:00.1152776 Retrieved all transfers for user: 1012
+2024-09-16T16:13:12.646013 Retrieved current user info: 
+User{id=1012, username='test99', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:13:12.646013 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? AND ts.transfer_status_desc = 'Pending' with parameter: 1012
+2024-09-16T16:13:12.6480235 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@26dab8e5
+2024-09-16T16:13:12.6480235 com.techelevator.tenmo.model.TransferDto@11f1d1c9
+2024-09-16T16:13:12.6480235 Retrieved pending transfers for user: 1012
+2024-09-16T16:13:22.9923922 Retrieved current user info: 
+User{id=1012, username='test99', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:13:22.9933913 Balance for user: 1012 retrieved successfully.
+2024-09-16T16:14:52.3698499 Retrieved current user info: 
+User{id=1012, username='test99', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:14:52.3698499 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? OR a_to.user_id = ? with parameter: 1012
+2024-09-16T16:14:52.3728595 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@4de4a21b
+2024-09-16T16:14:52.3728595 com.techelevator.tenmo.model.TransferDto@3091cc82
+2024-09-16T16:14:52.3738582 com.techelevator.tenmo.model.TransferDto@75111ff9
+2024-09-16T16:14:52.3738582 Retrieved all transfers for user: 1012
+2024-09-16T16:14:59.6743973 Retrieved current user info: 
+User{id=1012, username='test99', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:14:59.6743973 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? AND ts.transfer_status_desc = 'Pending' with parameter: 1012
+2024-09-16T16:14:59.6773968 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@41bad41b
+2024-09-16T16:14:59.6773968 com.techelevator.tenmo.model.TransferDto@307a5dae
+2024-09-16T16:14:59.6773968 Retrieved pending transfers for user: 1012
+2024-09-16T16:15:08.9558785 Retrieved current user info: 
+User{id=1012, username='test99', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:15:08.9568792 Balance for user: 1012 retrieved successfully.
+2024-09-16T16:15:08.9818774 Retrieved status Id for description: Approved
+2024-09-16T16:15:08.9828798 Retrieved user info for user: test100
+2024-09-16T16:15:08.9828798 Retrieved current user info: 
+User{id=1012, username='test99', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:15:08.986885 Transfer with Id: 3032 was successfully updated to 
+2024-09-16T16:15:08.9928812 Balance for userId: 1014 was increased by: $100.00
+2024-09-16T16:15:08.9948827 Balance for userId: 1012 was decreased by: $100.00
+2024-09-16T16:15:13.7924318 Retrieved current user info: 
+User{id=1012, username='test99', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:15:13.7934308 Balance for user: 1012 retrieved successfully.
+2024-09-16T16:15:32.7609737 Tenmo user: test99 logged in.
+2024-09-16T16:15:36.4321033 Retrieved current user info: 
+User{id=1012, username='test99', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:15:36.4331036 Balance for user: 1012 retrieved successfully.
+2024-09-16T16:15:42.5117653 Retrieved current user info: 
+User{id=1012, username='test99', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:15:42.512764 Balance for user: 1012 retrieved successfully.
+2024-09-16T16:15:54.9848791 Retrieved current user info: 
+User{id=1012, username='test99', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:15:54.9848791 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? OR a_to.user_id = ? with parameter: 1012
+2024-09-16T16:15:54.9868793 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@5d3af3bf
+2024-09-16T16:15:54.9868793 com.techelevator.tenmo.model.TransferDto@3b562ecb
+2024-09-16T16:15:54.9868793 com.techelevator.tenmo.model.TransferDto@6c56c135
+2024-09-16T16:15:54.9868793 Retrieved all transfers for user: 1012
+2024-09-16T16:21:21.5479441 New Tenmo user registered: test101
+2024-09-16T16:21:32.3617601 New Tenmo user registered: test202
+2024-09-16T16:21:42.226173 Tenmo user: test101 logged in.
+2024-09-16T16:21:44.6523119 Retrieved current user info: 
+User{id=1015, username='test101', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:21:44.6543175 Balance for user: 1015 retrieved successfully.
+2024-09-16T16:22:06.8890675 User list retrieved
+2024-09-16T16:23:24.8476141 Retrieved current user info: 
+User{id=1015, username='test101', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:23:24.8486162 Balance for user: 1015 retrieved successfully.
+2024-09-16T16:23:33.7898449 User list retrieved
+2024-09-16T16:23:45.6010496 User list retrieved
+2024-09-16T16:24:01.9167 Retrieved current user info: 
+User{id=1015, username='test101', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:24:01.917699 Balance for user: 1015 retrieved successfully.
+2024-09-16T16:24:01.9677012 Retrieved user info for user: test101
+2024-09-16T16:24:01.9687017 Retrieved user info for user: test202
+2024-09-16T16:24:01.969701 Retrieved status Id for description: Send
+2024-09-16T16:24:01.9707009 Retrieved status Id for description: Approved
+2024-09-16T16:24:01.9727009 Account Id: 2015 found for user: 1015
+2024-09-16T16:24:01.9727009 Account Id: 2016 found for user: 1016
+2024-09-16T16:24:01.9812241 Balance for userId: 1015 was decreased by: $100
+2024-09-16T16:24:01.9832236 Balance for userId: 1016 was increased by: $100
+2024-09-16T16:24:01.9842225 Created and retrieved new transfer with id: 3033
+2024-09-16T16:24:06.1713904 Retrieved current user info: 
+User{id=1015, username='test101', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:24:06.1723903 Balance for user: 1015 retrieved successfully.
+2024-09-16T16:24:18.5931358 Retrieved current user info: 
+User{id=1015, username='test101', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:24:18.5941427 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? OR a_to.user_id = ? with parameter: 1015
+2024-09-16T16:24:18.5991417 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@5e1284b
+2024-09-16T16:24:18.6001422 com.techelevator.tenmo.model.TransferDto@267e15a9
+2024-09-16T16:24:18.6001422 Retrieved all transfers for user: 1015
+2024-09-16T16:24:24.7733515 Retrieved current user info: 
+User{id=1015, username='test101', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:24:24.7733515 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? AND ts.transfer_status_desc = 'Pending' with parameter: 1015
+2024-09-16T16:24:24.7753494 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@5d3af3bf
+2024-09-16T16:24:30.1653184 User list retrieved
+2024-09-16T16:24:36.0011129 Retrieved user info for user: test202
+2024-09-16T16:24:36.0021115 Retrieved user info for user: test101
+2024-09-16T16:24:36.0029858 Retrieved status Id for description: Request
+2024-09-16T16:24:36.0029858 Retrieved status Id for description: Pending
+2024-09-16T16:24:36.0029858 Account Id: 2016 found for user: 1016
+2024-09-16T16:24:36.0041927 Account Id: 2015 found for user: 1015
+2024-09-16T16:24:36.006201 Created and retrieved new transfer with id: 3034
+2024-09-16T16:24:39.0211827 Retrieved current user info: 
+User{id=1015, username='test101', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:24:39.0211827 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? OR a_to.user_id = ? with parameter: 1015
+2024-09-16T16:24:39.0231819 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@62d1f5ef
+2024-09-16T16:24:39.0231819 com.techelevator.tenmo.model.TransferDto@26b44f81
+2024-09-16T16:24:39.0231819 com.techelevator.tenmo.model.TransferDto@1f069b15
+2024-09-16T16:24:39.0231819 Retrieved all transfers for user: 1015
+2024-09-16T16:25:00.7132731 Retrieved current user info: 
+User{id=1015, username='test101', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:25:00.7132731 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? AND ts.transfer_status_desc = 'Pending' with parameter: 1015
+2024-09-16T16:25:00.7142748 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@7f8b3b8a
+2024-09-16T16:25:11.4677002 Retrieved current user info: 
+User{id=1015, username='test101', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:25:11.4687008 Balance for user: 1015 retrieved successfully.
+2024-09-16T16:25:33.4981427 Tenmo user: test202 logged in.
+2024-09-16T16:25:35.4918281 Retrieved current user info: 
+User{id=1016, username='test202', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:25:35.4928269 Balance for user: 1016 retrieved successfully.
+2024-09-16T16:25:38.8295681 Retrieved current user info: 
+User{id=1016, username='test202', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:25:38.8295681 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? OR a_to.user_id = ? with parameter: 1016
+2024-09-16T16:25:38.8315718 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@6626f5db
+2024-09-16T16:25:38.8315718 com.techelevator.tenmo.model.TransferDto@4450dc64
+2024-09-16T16:25:38.8315718 com.techelevator.tenmo.model.TransferDto@3924800a
+2024-09-16T16:25:38.8315718 Retrieved all transfers for user: 1016
+2024-09-16T16:25:47.6444476 Retrieved current user info: 
+User{id=1016, username='test202', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:25:47.6454469 Executing SQL: SELECT t.transfer_id, tt.transfer_type_desc AS transfer_type, ts.transfer_status_desc AS transfer_status, u_from.username AS account_from_username, u_to.username AS account_to_username, t.amount  FROM transfer t JOIN transfer_type tt ON t.transfer_type_id = tt.transfer_type_id JOIN transfer_status ts ON t.transfer_status_id = ts.transfer_status_id JOIN account a_from ON t.account_from = a_from.account_id JOIN account a_to ON t.account_to = a_to.account_id JOIN tenmo_user u_from ON a_from.user_id = u_from.user_id JOIN tenmo_user u_to ON a_to.user_id = u_to.user_id WHERE a_from.user_id = ? AND ts.transfer_status_desc = 'Pending' with parameter: 1016
+2024-09-16T16:25:47.6464471 org.springframework.jdbc.support.rowset.ResultSetWrappingSqlRowSet@6e5084
+2024-09-16T16:25:47.6464471 com.techelevator.tenmo.model.TransferDto@3a78db29
+2024-09-16T16:25:47.6464471 Retrieved pending transfers for user: 1016
+2024-09-16T16:26:03.4390623 Retrieved current user info: 
+User{id=1016, username='test202', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:26:03.4400546 Balance for user: 1016 retrieved successfully.
+2024-09-16T16:26:03.4646151 Retrieved status Id for description: Approved
+2024-09-16T16:26:03.4646151 Retrieved user info for user: test101
+2024-09-16T16:26:03.4656165 Retrieved current user info: 
+User{id=1016, username='test202', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:26:03.4676129 Transfer with Id: 3034 was successfully updated to 
+2024-09-16T16:26:03.4686163 Balance for userId: 1015 was increased by: $100.00
+2024-09-16T16:26:03.4696126 Balance for userId: 1016 was decreased by: $100.00
+2024-09-16T16:26:06.7882556 Retrieved current user info: 
+User{id=1016, username='test202', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:26:06.789253 Balance for user: 1016 retrieved successfully.
+2024-09-16T16:26:24.4034823 Tenmo user: test101 logged in.
+2024-09-16T16:26:26.2061836 Retrieved current user info: 
+User{id=1015, username='test101', activated=true, authorities=[Authority{name=ROLE_USER}]}
+2024-09-16T16:26:26.2061836 Balance for user: 1015 retrieved successfully.
